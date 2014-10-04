@@ -1,4 +1,5 @@
-<div class="awesome-box">
+<div class="awesome-box col-xs-4 col-xs-offset-4 text-center">
+ 	
  	<h1>The best life tips...</h1>
 	<h2>
 		"
@@ -6,6 +7,16 @@
 		"
 	</h2>
 	
+	<h3>
+		Rating:
+		<% if@quote.rating %>
+			<%= @quote.rating %>
+			<% else %>
+				None
+			<% end %>
+
+	</h3>
+
 	<p>
 		<%= @quote.author %>
 	</p>
